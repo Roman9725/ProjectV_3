@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Layout !</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.clearFix {
+				clear: both;
+			}
+
+			.mainWrap {
+				width: 100%;
+			}
+
+			.subWrap {
+				width: 960px;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.logo {
+				background-color: grey;
+				height: 75px;
+				margin-bottom: 15px;
+			}
+
+
+      .LHS {
+        float: left;
+        background-color: grey;
+        width: 25%;
+        height: 715px;
+        margin: 0 10px 15px 0;
+      }
+
+      .RHS {
+        float: left;
+        width: 73%;
+        margin-left: 9px;
+      }
+
+      .banner {
+        background-color:grey;
+        height: 200px;
+        margin-bottom: 15px;
+      }
+
+      .mainContent {
+        background-color: grey;
+        height: 500px;
+      }
+
+			.footerSec {
+				background-color: grey;
+				height: 50px;
+				margin-top: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--start of top section-->
+
+		<div class="mainWrap">
+			<div class="subWrap">
+				<div class="logo">
+					<h1>LOGO</h1>
+				</div>
+			</div>
+		</div>
+
+		<!--Top section ends here-->
+
+		<!--start of middle section-->
+
+		<div class="mainWrap">
+			<div class="subWrap">
+				<div class="LHS">
+					<h1>SIDE BAR</h1>
+				</div>
+				<div class="RHS">
+					<div class="banner">
+						<h1>Banner</h1>
+					</div>
+					<div class="mainContent">
+						<h1>MAIN BODY</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--middle section ends here-->
+
+		<div class="clearFix"></div>
+
+		<!--start of footer-->
+
+		<div class="mainWrap">
+			<div class="subWrap">
+				<div class="footerSec">
+					<footer>
+						<h1>FOOTER</h1>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		<!--middle section ends here-->
+	</body>
+</html>
